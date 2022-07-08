@@ -2,7 +2,6 @@
 {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
 }
 
 #scroll-btn {
@@ -31,6 +30,7 @@ body
     color: white;
     font-family: "Poppins", sans serif;
     margin: 0 4rem;
+    scroll-behavior: smooth;
 }
 
 .logo
