@@ -121,9 +121,9 @@
             const scrollWindow = function () {
                 if (window.scrollY != 0) {
                 setTimeout(function () {
-                    window.scrollTo(0, window.scrollY - 50);
+                    window.scrollTo(0, 0);
                     scrollWindow();
-                }, 10);
+                });
                 }
             };
             scrollBtn.addEventListener("click", scrollWindow);
