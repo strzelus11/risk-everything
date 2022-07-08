@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/nike.png">
+
+        <title>Products</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.nike.com" target="_blank"><img class="logo" src="images/nike.png"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">The Last Game</a></li>
+                <li><a class="active" href="products.html">Products</a></li>
+                <li><a href="players.html">Winner Stays On</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1 class="title">
+                Products
+            </h1>
+            <img id="ad" src="images/ad.jpg"/>
+            <h1>
+                Success
+            </h1>
+            <p>
+                With one strike of his Nike Magista boot, German striker Mario Gotze sent his nation into raptures and sealed his place in football history.
+
+                For Nike Football, the moment capped an exciting year for both the brand and business.
+
+                On the pitch, Nike started the tournament with 10 sponsored teams, while 53 percent of all players selected for their squads wore Nike boots, more than for all other brands combined. Throughout the competition, Nike-sponsored players scored 76 goals, including the winner in the final from German striker Mario Gotze, and the goal that took his fellow striker Miroslav Klose to all-time tournament goalscorer, breaking the cumulative record previously held by Ronaldo of Brasil.
+
+                Off the pitch, the #RiskEverything campaign dominated views, social chatter and engagement leading up to and during the tournament. The three #RiskEverything films,  “Risk Everything,” “Winner Stays” and “The Last Game”, have racked up 397 million online views to date. Twenty-three million people engaged with the content by liking, retweeting or commenting, making “The Last Game” one of Facebook's most shared posts ever.
+
+                Nike extended the campaign by creating real-time animations, such as the #AskZlatan digital shorts. The animated Zlatan Ibrahimovic commented on Nike's teams and players through short videos posted on social media and through media partnerships, resulting in 20.6 million online views and 12 million consumer engagements. As a result, Nike Football gained 6.2 million new followers during this time across different social platforms, around 1.5 million per week throughout the tournament. This brings the cumulative total of Nike Football's social channels to 78.8 million followers.
+
+                These numbers show an unprecedented level of engagement with the brand. Alongside 21 percent growth in Nike Football’s business over the fiscal year leading up to the tournament (June 1, 2013 - May 31, 2014) , the figures demonstrate why Nike is the sport’s leading brand globally.
+
+                Nike Football continues its momentum with the launch of the Nike Football app. The app allows members of the Nike Football community to be the first to access the latest products, stories and event experiences, boasting interactive features, such as easily organizing pick-up games with friends. Even after the final whistle, the beautiful game continues, on streets, courts and pitches across the globe.
+            </p>
+            <h1 class="boots-title">
+                Nike <span class="red">Hypervenom</span> worn by <a class="player" href="https://pl.wikipedia.org/wiki/Neymar">Neymar Jr</a>
+            </h1>
+            <img class="boots" src="images/hypervenom.jpg"/>
+            <h1 class="boots-title">
+                Nike <span class="red">Mercurial</span> worn by <a class="player" href="https://pl.wikipedia.org/wiki/Cristiano_Ronaldo">Cristiano Ronaldo</a>
+            </h1>
+            <img class="boots" src="images/mercurial.jpg"/>
+            <h1 class="boots-title">
+                Nike <span class="yellow">Magista</span> worn by <a class="player" href="https://pl.wikipedia.org/wiki/Andr%C3%A9s_Iniesta">Andres Iniesta</a>
+            </h1>
+            <img class="boots" src="images/magista.jpg"/>
+            <h1 class="boots-title">
+                Nike <span class="yellow">Tiempo</span> worn by <a class="player" href="https://pl.wikipedia.org/wiki/Gerard_Piqu%C3%A9">Gerard Pique</a>
+            </h1>
+            <img class="boots" src="images/tiempo.jpg"/>
+        </main>
+        <footer>
+            Jakub Strzelecki &#169; 2022
+        </footer>
+
+        <script>
+            const scrollTop = function () {
+            // create HTML button element
+            const scrollBtn = document.createElement("button");
+            scrollBtn.innerHTML = "&uarr;";
+            scrollBtn.setAttribute("id", "scroll-btn");
+            document.body.appendChild(scrollBtn);
+            // hide/show button based on scroll distance
+            const scrollBtnDisplay = function () {
+                window.scrollY > window.innerHeight
+                ? scrollBtn.classList.add("show")
+                : scrollBtn.classList.remove("show");
+            };
+            window.addEventListener("scroll", scrollBtnDisplay);
+            // scroll to top when button clicked
+            const scrollWindow = function () {
+                if (window.scrollY != 0) {
+                setTimeout(function () {
+                    window.scrollTo(0, window.scrollY - 50);
+                    scrollWindow();
+                }, 10);
+                }
+            };
+            scrollBtn.addEventListener("click", scrollWindow);
+            };
+            scrollTop();
+        </script>`
+    </body>
+</html>

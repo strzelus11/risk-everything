@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/nike.png">
+
+        <title>Winner Stays On</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.nike.com" target="_blank"><img class="logo" src="images/nike.png"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">The Last Game</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a class="active" href="players.html">Winner Stays On</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1 class="title">
+                "Winner Stays On"
+            </h1>
+            <p>
+                Today, Nike launched the second part of its ‘Risk Everything’ Football campaign for 2014 with a film called “Winner Stays.”   While Cristiano Ronaldo, Neymar Jr. and Wayne Rooney are back, they are now joined by a host of other football superstars and a few special guests.
+            </p>
+
+            <div></div>
+            <figure class="quote">
+                <blockquote>
+                    <cite>
+                    “We connect to players’ passion for the game, whether it is the world’s best in Brasil or players in the park or street. ‘Winner Stays’ taps into an experience that every young player around the world will recognize – competition with friends and the idea of playing with your heroes or pretending to be them.”
+                    </cite>
+                </blockquote>
+                <figcaption>
+                    &mdash; Nike’s Chief Marketing Officer Davide Grasso
+                </figcaption>
+            </figure>
+
+            <p>
+                The film opens on a park with two teams challenging each other in a pick-up game where the winner stays on. Straight away as the challenge is set, the stakes are raised: “Guess I’m Cristiano Ronaldo then,” says one. His opponent responds saying, “Yeah? Well I’m Neymar”
+            </p>
+
+            <p>
+                In a split second a seemingly simple game between friends has become a grudge match of sorts, aided by the unique skills of some of the world’s greatest footballing talent. As the match develops, players call out the names of players to possess their specific skill, and before we know it Wayne Rooney, Zlatan Ibrahimovic, Eden Hazard and Gonzalo Higuain have joined the game.
+            </p>
+
+            <p>
+                Ronaldo scores a screamer to send his team 1-0 up and taunts one of his opponents, saying “The crowd goes wild,” upon which a crowd is revealed cheering behind him. His rival is not deflated and points out that 50,000 are screaming his name. As they banter the young player changes his shoes in to the Magista, a boot that’s not even out yet. Ronaldo counters to give us the world’s first glimpse of the new Mercurial Superfly.
+            </p>
+
+            <p>
+                The match continues and more players join the action: Gerard Pique makes a last-ditch tackle, David Luiz appears to be cloned, and a mix-up sees one boy’s dream of becoming Andrés Iniesta shattered in a fun moment of mistaken identity. This is a match for the ages.
+            </p>
+
+            <p>
+                Neymar breaks free to lob the keeper to make it 1-1 and the real Iniesta adds to his team’s tally by scoring a volley to make it 2-1. Rooney responds with a long-range effort to make it 2-2 and the Jumbotron announces “Next Goal Wins!”
+            </p>
+
+            <p>
+                As time is running out and both teams cautiously try to avoid any mistakes, the last remaining player yet to transform is brought down inside the box by David Luiz. Ronaldo steps up to take the penalty but is pushed aside by the brave youngster, who seizes his moment to risk everything and take responsibility for the game-defining moment.
+            </p>
+
+            <div></div>
+            <figure class="quote">
+                <blockquote>
+                    <cite>
+                    “We’re proud of our history of inspirational, fun football campaigns that become one of the talking points around big tournaments. We believe in fearless, exciting joyful football and that’s the point of view we want to get across”
+                    </cite>
+                </blockquote>
+                <figcaption>
+                    &mdash; Nike’s Chief Marketing Officer Davide Grasso
+                </figcaption>
+            </figure>
+
+            <div></div>
+            <figure class="quote">
+                <blockquote>
+                    <cite>
+                    “Nike players play on the edge because they know great moments spring from attempts to try something unique and out of the ordinary. We watch the game for these moments because they inspire us to create our own,” Grasso added.  “This is what Risk Everything is about. If you are prepared to take those risks, there is no telling what you can do”
+                    </cite>
+                </blockquote>
+                <figcaption>
+                    &mdash; Nike’s Chief Marketing Officer Davide Grasso
+                </figcaption>
+            </figure>
+
+            <p>
+                The full list of players featured in the film is: Cristiano Ronaldo, Neymar Jr., Wayne Rooney, Zlatan  Ibrahimović, Gonzalo Higuaín, Eden Hazard, Andrea Pirlo, Gerard Piqué, Andrés Iniesta, Mario Götze, Thiago Silva, Thibaut Courtois, Tim Howard, David Luiz and… David Luiz.
+            </p>
+
+            <p>
+                “Winner Stays” also features a host of other athletes and special guests including Kobe Bryant, Jon Jones, Anderson Silva, Irina Shayk and The Incredible Hulk.
+            </p>
+
+            <iframe src="https://youtube.com/embed/eGUor824a74"></iframe>
+        </main>
+        <footer>
+            Jakub Strzelecki &#169; 2022
+        </footer>
+
+        <script>
+            const scrollTop = function () {
+            // create HTML button element
+            const scrollBtn = document.createElement("button");
+            scrollBtn.innerHTML = "&uarr;";
+            scrollBtn.setAttribute("id", "scroll-btn");
+            document.body.appendChild(scrollBtn);
+            // hide/show button based on scroll distance
+            const scrollBtnDisplay = function () {
+                window.scrollY > window.innerHeight
+                ? scrollBtn.classList.add("show")
+                : scrollBtn.classList.remove("show");
+            };
+            window.addEventListener("scroll", scrollBtnDisplay);
+            // scroll to top when button clicked
+            const scrollWindow = function () {
+                if (window.scrollY != 0) {
+                setTimeout(function () {
+                    window.scrollTo(0, window.scrollY - 50);
+                    scrollWindow();
+                }, 10);
+                }
+            };
+            scrollBtn.addEventListener("click", scrollWindow);
+            };
+            scrollTop();
+        </script>
+    </body>
+</html>

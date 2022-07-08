@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/nike.png">
+
+        <title>Risk everything</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.nike.com" target="_blank"><img class="logo" src="images/nike.png"/></a>
+            
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">The Last Game</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="players.html">Winner Stays On</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1 class="title">
+                Risk Everything
+            </h1>
+            <p class="first" id="first">
+                Risk Everything is an advertisement campaign created for American sports apparel company Nike by the American advertising agency Wieden+Kennedy. The advertisement campaign, spanning radio, television, out-of-home, online advertising and print media, was specially made for the 2014 FIFA World Cup and starring well-known football players from national teams and clubs. This campaign emphasizes the mantra of "risk everything" – taking every dangerous life-or-death chance to succeed and outshine your rivals.
+            </p>
+            <p>
+                Starring Portuguese footballer Cristiano Ronaldo, Brazil's Neymar and England's Wayne Rooney, the advertisement focuses on the pressure superstar players face when playing for their country in the FIFA World Cup. Ronaldo is surrounded by his fans – and advertisements depicting him – everywhere and Portugal's hopes seem to be riding on Ronaldo. Rooney, on the other hand, faces skepticism everywhere he goes and Neymar, who is wearing Brazil's prestigious number 10 shirt, is trying to live up to his country's football fanaticism, the legend of the players who wore the number 10 for Brazil and World Cup aspirations. The ad ends the three players walking with their team to the pitch, preparing themselves for the onslaught and the tagline "Pressure shapes Legends".
+            </p>
+        </main>
+        <footer>
+            Jakub Strzelecki &#169; 2022
+        </footer>
+        <script>
+            const scrollTop = function () {
+            // create HTML button element
+            const scrollBtn = document.createElement("button");
+            scrollBtn.innerHTML = "&uarr;";
+            scrollBtn.setAttribute("id", "scroll-btn");
+            document.body.appendChild(scrollBtn);
+            // hide/show button based on scroll distance
+            const scrollBtnDisplay = function () {
+                window.scrollY > window.innerHeight
+                ? scrollBtn.classList.add("show")
+                : scrollBtn.classList.remove("show");
+            };
+            window.addEventListener("scroll", scrollBtnDisplay);
+            // scroll to top when button clicked
+            const scrollWindow = function () {
+                if (window.scrollY != 0) {
+                setTimeout(function () {
+                    window.scrollTo(0, window.scrollY - 50);
+                    scrollWindow();
+                }, 10);
+                }
+            };
+            scrollBtn.addEventListener("click", scrollWindow);
+            };
+            scrollTop();
+        </script>
+    </body>
+</html>

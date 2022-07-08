@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="styles.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link rel="icon" href="images/nike.png">
+
+        <title>The Last Game</title>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.nike.com" target="_blank"><img class="logo" src="images/nike.png"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">The Last Game</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="players.html">Winner Stays On</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1 class="title">
+                "The Last Game"
+            </h1>
+            <p>
+                The film – "The Last Game" – is a five-minute animated feature starring some of the world's greatest footballers on a mission to save football from the hands of a villainous mastermind, The Scientist.
+            </p>
+
+            <p>
+                The Scientist - a suave, smooth operating genius - has been analyzing the game for years. He is dismissive of the audacious risks that the likes of Cristiano Ronaldo, Zlatan Ibrahimovic and Neymar Jr. take on the pitch. His research, which includes the claim that Ibrahimovic's overhead kicks have a 76 percent chance of missing, leads him to create The Clones, automatons programmed to remove all risk-taking and focus only on efficiency, decision-making and results.
+            </p>
+
+            <div></div>
+            <figure class="quote">
+                <blockquote>
+                    <cite>
+                    "The idea behind ‘The Last Game’ is to show the world that Nike, like any true lover of football, believes that the game should be brilliant, daring and bold. Having the confidence to take risks is absolutely vital in football. Imagine a world without the brilliance of Cristiano Ronaldo, the acrobatics of Zlatan or the wizardry of Neymar”
+                    </cite>
+                </blockquote>
+                <figcaption>
+                    &mdash; Nike’s Chief Marketing Officer Davide Grasso
+                </figcaption>
+            </figure>
+
+            <p>
+                Following the opening scene, where The Scientist introduces The Clones, we witness the dulling effect of their style of play on the world of football. Brilliant football ceases to exist and the game becomes almost extinct. With the real players now leading "normal" lives, Brasilian legend Ronaldo (O Fenómeno) decides enough is enough and goes on a mission to reignite the game with brilliant football from the re-assembled group of the world's most brilliant players.
+            </p>
+
+            <p>
+                He rescues a dejected Zlatan from a bookstall outside a stadium, leaving copies of I AM ZLATAN behind. Cristiano Ronaldo, now relegated to life as a window mannequin, is snatched by his namesake from the SPORT-U-GAL shop window. Iniesta’s life as a farmer is over before you can say Magista. Neymar and David Luiz's new careers as hairdressers are cut short as El Fenómeno nabs them, and Wayne Rooney’s stint as a fisherman washes up when he’s bundled into the back of a van.
+            </p>
+
+            <p>
+                Once together, O Fenómeno manages to convince the skeptical Players with a stirring speech about beating The Clones. To remove any doubts, the Brasilian legend reminds them of some of their own greatest moments as they walk the stairs of his secret location.
+            </p>
+
+            <p>
+                The world's attention turns to the showdown between The Players and The Clones to determine the future of football.
+            </p>
+
+            <figure class="quote">
+                <blockquote>
+                    <cite>
+                        "The final 90 seconds of The Last Game prove, beyond any doubt, that brilliant football should be the only kind of football. Brilliant, creative, risk-taking football. That is what #riskeverything is all about”
+                    </cite>
+                </blockquote>
+                <figcaption>
+                    &mdash; Nike’s Chief Marketing Officer Davide Grasso
+                </figcaption>
+            </figure>
+
+            <iframe src="https://youtube.com/embed/CJ2xU9GUPVY"></iframe>
+        </main>
+        <footer>
+            Jakub Strzelecki &#169; 2022
+        </footer>
+
+        <script>
+            const scrollTop = function () {
+            // create HTML button element
+            const scrollBtn = document.createElement("button");
+            scrollBtn.innerHTML = "&uarr;";
+            scrollBtn.setAttribute("id", "scroll-btn");
+            document.body.appendChild(scrollBtn);
+            // hide/show button based on scroll distance
+            const scrollBtnDisplay = function () {
+                window.scrollY > window.innerHeight
+                ? scrollBtn.classList.add("show")
+                : scrollBtn.classList.remove("show");
+            };
+            window.addEventListener("scroll", scrollBtnDisplay);
+            // scroll to top when button clicked
+            const scrollWindow = function () {
+                if (window.scrollY != 0) {
+                setTimeout(function () {
+                    window.scrollTo(0, window.scrollY - 50);
+                    scrollWindow();
+                }, 10);
+                }
+            };
+            scrollBtn.addEventListener("click", scrollWindow);
+            };
+            scrollTop();
+        </script>
+    </body>
+</html>
