@@ -4,26 +4,6 @@
     padding: 0;
 }
 
-#scroll-btn {
-    opacity: 0;
-    width: 40px;
-    height: 40px;
-    color: #ffffff;
-    background-color: #000;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    font: bold 20px monospace;
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-#scroll-btn.show {
-    opacity: 1;
-    transition: opacity 1s, transform 1s;
-}
-
 body
 {
     background-color: black;
@@ -96,6 +76,7 @@ li a:hover
 p
 {
     margin: 3rem auto;
+    text-align: justify;
     padding: 0 10rem;
     font-size: 1.5rem;
     line-height: 4rem;
